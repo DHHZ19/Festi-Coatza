@@ -3113,7 +3113,16 @@ input, select, textarea {
 			box-shadow: inset 0 0 0 1px #20c5e7;
 			color: #20c5e7 !important;
 		}
-
+		.my-button{
+			margin-top: 30px;
+			border-radius: 15px;
+			padding: 80px 20pt 45x;
+			background: yellow;
+			font-size: 1.5rem;
+			cursor: pointer;
+			line-height: 1rem;
+			vertical-align: middle;
+		}
 			.spotlights input[type="submit"]:hover,
 			.spotlights input[type="reset"]:hover,
 			.spotlights input[type="button"]:hover,
@@ -3295,7 +3304,18 @@ input, select, textarea {
 			}
 
 		@media screen and (max-width: 980px) {
+			.my-button{
+				height: 50%;
+				margin-bottom: 100px;
+				border-radius: 15px;
+				background: yellow;
+				font-size: 1.2rem;
 
+				width: 95%;
+				cursor: pointer;
+				overflow: scroll;
+				white-space:inherit
+			}
 			.spotlights {
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
@@ -3937,17 +3957,17 @@ input, select, textarea {
 		#banner input[type="button"],
 		#banner button,
 		#banner .button {
-			background-color: transparent;
+			background-color: orange;
 			box-shadow: inset 0 0 0 1px #20c5e7;
-			color: #20c5e7 !important;
+			color: whitesmoke !important;
 		}
-
+		
 			#banner input[type="submit"]:hover,
 			#banner input[type="reset"]:hover,
 			#banner input[type="button"]:hover,
 			#banner button:hover,
 			#banner .button:hover {
-				background-color: rgba(32, 197, 231, 0.1);
+				background-color: orangered;
 			}
 
 				#banner input[type="submit"]:hover:active,
