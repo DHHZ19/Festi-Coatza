@@ -3051,6 +3051,9 @@ input, select, textarea {
 		}
 
 /* Spotlights */
+	#candyImg{
+		margin-top: 10px;
+	}
 
 	.spotlights {
 		display: -moz-flex;
