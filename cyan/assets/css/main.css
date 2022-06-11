@@ -3051,6 +3051,9 @@ input, select, textarea {
 		}
 
 /* Spotlights */
+	#candyImg{
+		margin-top: 10px;
+	}
 
 	.spotlights {
 		display: -moz-flex;
@@ -3114,13 +3117,15 @@ input, select, textarea {
 			color: #20c5e7 !important;
 		}
 		.my-button{
-			margin-top: 30px;
+			margin-top: 35px;
+			width: 75%;
+			white-space: pre-line;
 			border-radius: 15px;
 			padding: 80px 20pt 45x;
 			background: yellow;
 			font-size: 1.5rem;
 			cursor: pointer;
-			line-height: 1rem;
+			line-height: 1.3rem;
 			vertical-align: middle;
 		}
 			.spotlights input[type="submit"]:hover,
