@@ -47,7 +47,25 @@ table {
 body {
 	-webkit-text-size-adjust: none;
 }
-
+.gallery {
+	display: flex;
+	justify-content:center;
+	gap: 20px;
+}
+.gallery img{
+	max-width: 20vw;	
+	max-height: 50vh;
+}
+@media all and (max-width: 700px){
+	.gallery img{
+		max-width: 30vw;
+	}
+}
+.nuevo{
+	display: flex;
+	align-items: center;
+	
+}
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -2832,13 +2850,21 @@ input, select, textarea {
 			border-left: 0;
 			border-right: 0;
 		}
-
+		table td:first-of-type::first-letter{
+			font-size: 1.75rem;
+		}
+		@media all and (max-width: 650px){
+			table td:first-of-type{
+				text-align: center;
+			}
+		}
 		table td {
+			font-size: 1.25rem;
 			padding: 0.75rem 0.75rem;
 		}
 
 		table th {
-			font-size: 0.9rem;
+			font-size: 1.5rem;
 			font-weight: 700;
 			padding: 0 0.75rem 0.75rem 0.75rem;
 			text-align: left;
@@ -2879,11 +2905,11 @@ input, select, textarea {
 			}
 
 	table tbody tr {
-		border-color: rgba(144, 144, 144, 0.25);
+		border-color:	rgb(94 194	227) 	;
 	}
 
 		table tbody tr:nth-child(2n + 1) {
-			background-color: rgba(144, 144, 144, 0.075);
+			background-color: rgba(150,194,227);
 		}
 
 	table th {
@@ -3054,7 +3080,18 @@ input, select, textarea {
 	#candyImg{
 		margin-top: 10px;
 	}
-
+	@media screen and (max-width:700px){
+		#candyImg{
+		margin-top: 1px;
+		width: 90%;
+		}
+	}
+	@media screen and (max-width:1450px){
+		#candyImg{
+		margin-top: 2px;
+		width: 90%;
+		}
+	}
 	.spotlights {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3117,12 +3154,11 @@ input, select, textarea {
 			color: #20c5e7 !important;
 		}
 		.my-button{
+			height: 70%;
 			margin-top: 35px;
 			width: 75%;
 			white-space: pre-line;
 			border-radius: 15px;
-			padding: 80px 20pt 45x;
-			background: yellow;
 			font-size: 1.5rem;
 			cursor: pointer;
 			line-height: 1.3rem;
@@ -3313,9 +3349,7 @@ input, select, textarea {
 				height: 50%;
 				margin-bottom: 100px;
 				border-radius: 15px;
-				background: yellow;
 				font-size: 1.2rem;
-
 				width: 95%;
 				cursor: pointer;
 				overflow: scroll;
@@ -3925,7 +3959,7 @@ input, select, textarea {
 		}
 
 		#banner a {
-			color: #ffffff;
+			color: #20c5e7;
 		}
 
 			#banner a:hover {
@@ -3965,6 +3999,7 @@ input, select, textarea {
 			background-color: orange;
 			box-shadow: inset 0 0 0 1px #20c5e7;
 			color: whitesmoke !important;
+			border: solid #20c5e7;
 		}
 		
 			#banner input[type="submit"]:hover,
