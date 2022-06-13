@@ -314,9 +314,14 @@ input, select, textarea {
 		}
 
 	}
-	
-	@media screen and (max-width: 980px) {
+	video{
+		width: 35%;
+	}
 
+	@media screen and (max-width: 980px) {
+		video{
+			width: 80%;
+		}
 		body, input, select, textarea {
 			line-height: 1.75;
 		}
