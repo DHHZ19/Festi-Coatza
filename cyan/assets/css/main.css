@@ -424,7 +424,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: #20c5e7;
+		color: whitesmoke;
 	}
 
 		a:hover {
@@ -2036,7 +2036,7 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		background-color: transparent;
+		background-color: orange;
 		box-shadow: inset 0 0 0 1px #20c5e7;
 		color: #20c5e7 !important;
 	}
@@ -3357,7 +3357,6 @@ input, select, textarea {
 				font-size: 1.2rem;
 				width: 95%;
 				cursor: pointer;
-				overflow: scroll;
 				white-space:inherit
 			}
 			.spotlights {
@@ -3964,7 +3963,7 @@ input, select, textarea {
 		}
 
 		#banner a {
-			color: #20c5e7;
+			color: Whitesmoke;
 		}
 
 			#banner a:hover {
@@ -4012,7 +4011,7 @@ input, select, textarea {
 			#banner input[type="button"]:hover,
 			#banner button:hover,
 			#banner .button:hover {
-				background-color: orangered;
+				background-color: rgba(171,106,55,.35);
 			}
 
 				#banner input[type="submit"]:hover:active,
