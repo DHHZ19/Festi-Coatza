@@ -47,20 +47,18 @@ table {
 body {
 	-webkit-text-size-adjust: none;
 }
-.gallery {
-	display: flex;
-	justify-content:center;
-	gap: 20px;
-}
-.gallery img{
-	max-width: 20vw;	
-	max-height: 50vh;
-}
-@media all and (max-width: 700px){
-	.gallery img{
-		max-width: 30vw;
+	.gallery{
+		display: flex;
+		overflow: auto;
+		scroll-snap-type: mandatory;
 	}
-}
+	.gallery .test{
+		max-height: 30vh;
+		flex-shrink:0;
+		scroll-snap-align: start;
+	}
+
+
 .nuevo{
 	display: flex;
 	align-items: center;
