@@ -47,20 +47,18 @@ table {
 body {
 	-webkit-text-size-adjust: none;
 }
-.gallery {
-	display: flex;
-	justify-content:center;
-	gap: 20px;
-}
-.gallery img{
-	max-width: 20vw;	
-	max-height: 50vh;
-}
-@media all and (max-width: 700px){
-	.gallery img{
-		max-width: 30vw;
+	.gallery{
+		display: flex;
+		overflow: auto;
+		scroll-snap-type: mandatory;
 	}
-}
+	.gallery .test{
+		max-height: 30vh;
+		flex-shrink:0;
+		scroll-snap-align: start;
+	}
+
+
 .nuevo{
 	display: flex;
 	align-items: center;
@@ -424,7 +422,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: #20c5e7;
+		color: whitesmoke;
 	}
 
 		a:hover {
@@ -2036,11 +2034,9 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		background-color: transparent;
-		box-shadow: inset 0 0 0 1px #20c5e7;
-		color: #20c5e7 !important;
+		background-color: orange;
+		color: whitesmoke !important;
 	}
-
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
@@ -2425,13 +2421,13 @@ input, select, textarea {
 	.image {
 		border-radius: 4px;
 		border: 0;
-		display: inline-block;
+		display: flex;
 		position: relative;
 	}
 
 		.image img {
 			border-radius: 4px;
-			display: block;
+			display:block
 		}
 
 		.image.left, .image.right {
@@ -2463,11 +2459,15 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+			#mainLogo{
+				width: 60%;
+				display: inline-block;
+			}
 
 		.image.special {
 			box-shadow: 0px 15px 98px -20px #ffffff;
 			margin: 4rem auto 5rem auto;
-			max-width: 75%;
+			max-width: 60%;
 		}
 
 			@media screen and (max-width: 1280px) {
@@ -3163,11 +3163,13 @@ input, select, textarea {
 			margin-top: 35px;
 			width: 75%;
 			white-space: pre-line;
-			border-radius: 15px;
+			border-radius: 10px;
 			font-size: 1.5rem;
 			cursor: pointer;
 			line-height: 1.3rem;
 			vertical-align: middle;
+			border: solid 3px;
+			color: black;
 		}
 			.spotlights input[type="submit"]:hover,
 			.spotlights input[type="reset"]:hover,
@@ -3357,7 +3359,6 @@ input, select, textarea {
 				font-size: 1.2rem;
 				width: 95%;
 				cursor: pointer;
-				overflow: scroll;
 				white-space:inherit
 			}
 			.spotlights {
@@ -3964,7 +3965,7 @@ input, select, textarea {
 		}
 
 		#banner a {
-			color: #20c5e7;
+			color: Whitesmoke;
 		}
 
 			#banner a:hover {
@@ -4012,7 +4013,7 @@ input, select, textarea {
 			#banner input[type="button"]:hover,
 			#banner button:hover,
 			#banner .button:hover {
-				background-color: orangered;
+				background-color: rgba(171,106,55,.35);
 			}
 
 				#banner input[type="submit"]:hover:active,
