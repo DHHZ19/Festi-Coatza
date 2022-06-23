@@ -216,7 +216,6 @@ input, select, textarea {
 		margin: 0 auto 2rem auto;
 		width: 4rem;
 	}
-
 	header h1.left:before, header h2.left:before, header h3.left:before, header h4.left:before, header h5.left:before, header h6.left:before {
 		margin-left: 0;
 		margin-right: 0;
@@ -3082,6 +3081,7 @@ input, select, textarea {
 		}
 
 /* Spotlights */
+
 	#candyImg{
 		margin-top: 10px;
 	}
@@ -3090,13 +3090,31 @@ input, select, textarea {
 		margin-top: 1px;
 		width: 90%;
 		}
-	}
-	@media screen and (max-width:1450px){
-		#candyImg{
-		margin-top: 2px;
-		width: 90%;
+		.cakeImg{
+			margin-top: 5px;
+			width: 60%;
 		}
 	}
+	@media screen and (max-width:1350px){
+		#candyImg{
+		margin-top: 6px;
+		width: 80%;
+		}
+		.cakeImg{
+			margin-top:7px;
+			width: 60%;
+		}
+	} 
+	@media screen and (min-width: 1400px){
+		#candyImg{
+		width: 80%;
+		}
+		.cakeImg{
+			margin-top: 6px;
+			width: 60%;
+		}
+	}
+	
 	.spotlights {
 		display: -moz-flex;
 		display: -webkit-flex;
