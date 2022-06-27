@@ -60,9 +60,8 @@ body {
 
 
 .nuevo{
-	display: flex;
-	align-items: center;
-	
+	margin-top: 10px;
+	font-size: 1.7rem;
 }
 mark {
 	background-color: transparent;
@@ -2041,7 +2040,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(32, 197, 231, 0.1);
+			background-color: rgba(171,106,55,.35);
 		}
 
 			input[type="submit"]:hover:active,
