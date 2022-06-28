@@ -51,6 +51,12 @@ body {
 		display: flex;
 		overflow: auto;
 		scroll-snap-type: mandatory;
+
+	}
+	@media all and (min-width: 950px) {
+		.gallery{
+			justify-content: center;
+		}
 	}
 	.gallery .test{
 		max-height: 30vh;
